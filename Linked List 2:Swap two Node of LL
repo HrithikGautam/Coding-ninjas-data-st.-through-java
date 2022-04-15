@@ -4,6 +4,11 @@ public class Solution
     {
         LinkedListNode<Integer> temp=head,prev=null,c1=null,c2=null,p1=null,p2=null;
         int pos=0;
+        // in case the i and j are equal
+         if(i==j){
+            return head;
+        }
+             
         while(temp!=null)
         {
             if(pos==i)
